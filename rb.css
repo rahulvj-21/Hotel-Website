@@ -1,0 +1,142 @@
+.f
+{
+	color:black;
+	font-size: 20px;
+	background-image: url("40.jpeg");
+	width: 100%;
+	height: 150vh;	
+	background-size: 100% 100%;
+}
+.back
+{
+	background-image: url("1.jpg");
+	width: 100%;
+	height: 120vh;
+	background-size: 100% 100%;
+}
+ #color {
+	
+	color:WHITE;
+	background-color: #2c3e50;
+	width:315px;
+	font-family: impact;
+
+}
+
+.menu{
+	width: 100%;
+	height: 5vh;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+ .hea{
+    display:inline;
+    color: white;
+    position: relative; left: 400px; 
+    background-color: 
+    padding-left: 10px;
+    margin-left: 20px;
+    font-size:28px;
+    width: 100px;
+
+}
+
+#wel
+{
+	color: #B7DB4C;
+	font-size: 40px;
+	text-align: center; 
+	font-family: algerian;
+}
+#sim {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
+.room {
+	color:white;
+	font-size: 30px;
+}
+.image {
+        display:inline-block;
+        position: sticky;
+        margin-right: 40px;
+        height: 30%;
+        width: 30%;
+
+}
+#tariff {
+	font-size: 40px;
+}
+.i
+{
+	border-image: url("3.jpg") 30 round;
+	border:
+}
+.step
+{
+	color:white;
+	background-color:
+	width:300px;
+	font-size: 40px;
+	font-family: arial rounded mt bold; 
+}
+.back3
+{
+	background-image:url("20.jpg");
+	width: 100%;
+	height: 120vh;
+	background-size: 100% 100%;
+}
+.back4
+{
+	background-image:url("51.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+
+}
+.back6{
+	background-image:url("45.jpeg");
+	width: 1500px;
+	height: 250vh;
+	background-size: 100% 100%;
+}
+.footer {
+  background-color: black;
+  padding: 100px;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+  
+}
+.us{
+	background-image:url("41.jpeg");
+	width: 1500px;
+	height: 130vh;
+	background-size: 100% 100%; 
+}
+.info{
+	 
+  background-color: lightgrey;
+  width: 300px;
+  float: right;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+
+}
+.info1{
+	background-color: lightgrey;
+  width: 300px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 10px;
+}
+.info0{
+	background-image: url("48.jfif");
+	width: 100%;
+	height: 120vh;
+	background-size: 100% 100%;
+	
+}

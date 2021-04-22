@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<?php
+$servername = 'localhost:3306';
+$username = 'root';
+$password = '';
+$dbname = 'register';
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+	
+}else echo"connection created";
+
+
+$sql = "Select rent from roomrent where tariff=".$_Post['Room_tariff'].";";
+
+if (($conn->query($sql))->num_rows>0) {
+    while($row=($conn->query($sql)->fetch_assoc()){
+    	$rent=$row["root"];
+	}
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+?>
+<html>
+<head>
+	<link rel='stylesheet' type='text/css' href='rb.css'>
+	<title></title>
+</head>
+<body bgcolor='#f7f1e3'>
+	
+	
+    	<form method='post' action="connect.php">
+		<div class='form'>
+					
+		Full_name:<input type='text'  name='Full_name' style='width:200px; height: 30px;'>
+		Contact:<input type='text' name='Contact' style='width:200px; height: 30px;'>
+		Email:<input type='text' name='Email' style='width:200px; height: 30px;'><br><BR><br>
+		Room_tarrif:
+		<label id='Room_tariff'></label> 
+		<select id='Room_tariff' name='Room_tariff'>
+			<option value='Family suite'>Family suite</option>
+			<option value='Mini suite'>Mini suite</option>
+			<option value='Deluxe room'>Deluxe room</option>
+			<option value='Super Deluxe room'>Super Deluxe room</option>
+			<option value='Murphy room'>Murphy room</option>
+			<option value='Honeymoon room'>Honeymoon room</option>
+		</select>
+		
+		</DIV>
+		Rent_day:<input type="text" name="Rent_day" value='$rent' style='width:200px; height: 30px; '>
+		
+		Stay: <input type='text' name='Stay' style='width:200px; height: 30px; '><br><br><br>
+		<p id='demo'></p>
+				Check_in:<input type='time' id='myTime' name='Check_in' style='width:200px; height: 30px; '>
+		Check_out: <input type='time' id='myTime' name='Check_out' style='width:200px; height: 30px; '> <br><BR><br>
+		<label id='Id_Proof'>Choose_a_Id_Proof:</label> 
+        <select id='Id_Proof' name='Choose_a_Id_Proof'>
+		<option value='Driving liscense'>Driving liscense</option>
+		<option value='Passport'>Passport</option>
+		<option value='Pancard'>Pancard</option>
+		<option value='Id card'>Id card</option>
+		<option value='Aadhaar card'>Aadhaar card</option>
+</select>
+<br><br>
+		<input type='submit' value='submit'>
+	</div>
+	</form>
+
+</body>
+</html> 
